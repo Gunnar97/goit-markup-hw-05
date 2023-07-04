@@ -367,7 +367,7 @@ img {
 
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.10);
-    transition: background-color border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -442,10 +442,6 @@ img {
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08)
 }
-
-
-
-
 
 .values-list {
     --items: 4;
@@ -550,7 +546,7 @@ img {
     width: calc((100% - 120px) / 6);
     height: 88px;
     text-align: center;
-    
+    transition: color border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-link {
     display: flex;
@@ -564,7 +560,7 @@ img {
     height: 100%;
     flex-shrink: 0;
     text-align: center;
-    transition: color border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
         
 }
 .customers-icons{
@@ -686,6 +682,9 @@ img {
     gap: 24px;
     margin-bottom: 72px;
 }
+.btn-item{
+    transition: color background-color border-color box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .btn-menu{
     min-width: 69px;
@@ -704,7 +703,7 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    transition: color background-color border-color box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
     
 }
 
@@ -761,7 +760,7 @@ img {
     width: 100%;
     height: 100%;
     transform: translateY(100%);
-    transition: transform 500ms;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     color: var(--btn-menu-background);
     background-color: var(--btn-hero-background);
@@ -774,8 +773,8 @@ img {
 }
 
 
-.example-item-link:hover .overlay-text,
-.example-item-link:focus .overlay-text {
+.overlay:hover .overlay-text,
+.overlay:focus .overlay-text {
     transform: translateY(0%);
     transition: transform opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
