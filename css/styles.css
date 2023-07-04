@@ -367,7 +367,6 @@ img {
 
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.10);
-    background-color: var(--cornflower);
     transition: background-color border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -377,7 +376,7 @@ img {
 .close-button:focus {
     background-color: var(--active-color);
     border: none;
-    transition: color border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -565,7 +564,7 @@ img {
     height: 100%;
     flex-shrink: 0;
     text-align: center;
-    transition: color border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-icons{
     fill: currentColor;
@@ -698,7 +697,7 @@ img {
     border: 1px solid var(--cornflower);
 
     color: var(--btn-menu-color);
-    background: var(--btn-menu-background);
+    background-color: var(--btn-menu-background);
 
     font-family: 'Roboto', sans-serif ;
     font-style: normal;
@@ -706,16 +705,17 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    transition: color background box-shadow border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color background-color border-color box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .btn-menu:hover,
 .btn-menu:focus {
     color: var(--active-font-color);
-    background: var(--active-color);
+    background-color: var(--active-color);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
     border: 1px solid transparent;
-    transition: color background box-shadow border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color background-color border-color box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -733,6 +733,10 @@ img {
 
 .example-item {
     display: flex;
+}
+
+.example-item-link {
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .example-item-link:hover,
