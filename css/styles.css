@@ -295,14 +295,14 @@ img {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
     color: var(--hero-font-color);
-    background: var(--btn-hero-background);
+    background-color: var(--btn-hero-background);
 
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    transition: color background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-hero:hover,
@@ -367,8 +367,8 @@ img {
 
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.10);
-    background: var(--cornflower);
-    transition: background border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: var(--cornflower);
+    transition: background-color border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -565,7 +565,7 @@ img {
     height: 100%;
     flex-shrink: 0;
     text-align: center;
-    transition: color border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-icons{
     fill: currentColor;
