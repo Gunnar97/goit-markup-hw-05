@@ -360,7 +360,7 @@ img {
     padding: 0;
     transform: translateX(-100%);
 
-    background-color: transparent;
+    background-color: var(--cornflower);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -564,7 +564,8 @@ img {
     height: 100%;
     flex-shrink: 0;
     text-align: center;
-    transition: color border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
 }
 .customers-icons{
     fill: currentColor;
@@ -574,7 +575,7 @@ img {
 .customers-link:focus {
     border: 1px solid var(--active-color);
     color: var(--active-color);
-    transition: border color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -668,9 +669,7 @@ img {
     
 }
 
-.footer-social-icons{
-    
-}
+
 
 .footer-social-link:hover,
 .footer-social-link:focus {
@@ -752,9 +751,6 @@ img {
 /* ============Overlay pages================ */
 .example-item-box {
     position: relative;
-}
-
-.example-item {
     overflow: hidden;
 }
 
@@ -791,7 +787,7 @@ img {
 
 .example-item-link:hover .overlay,
 .example-item-link:focus .overlay {
-    transform: translateY(0);
+    transform: translateY(0%);
     opacity: 1;
     transition: transform opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
