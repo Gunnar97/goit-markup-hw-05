@@ -762,20 +762,19 @@ img {
     transform: translateY(100%);
     width: 100%;
     height: 100%;
-    padding-top: 40px;
-    padding-right: 32px;
-    padding-bottom: 164px;
-    padding-left: 32px;
-    background-color: var(--btn-hero-background);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     transition: transform 500ms;
-    opacity: 0;
+    overflow: hidden;
 }
 
 .overlay-text {
+    position: absolute;
+    top: 0;
+    padding: 40px 32px;
+    width: 100%;
+    height: 100%;
+    
     color: var(--btn-menu-background);
+    background-color: var(--btn-hero-background);
 
     font-size: 16px;
     font-style: normal;
@@ -788,7 +787,6 @@ img {
 .example-item-link:hover .overlay,
 .example-item-link:focus .overlay {
     transform: translateY(0%);
-    opacity: 1;
     transition: transform opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
